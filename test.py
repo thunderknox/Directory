@@ -1,26 +1,29 @@
 from flask import Flask, abort
 app = Flask(__name__)
 
-@app.route("/") 
-def hello():
-	return "Hello Napier"
+@app.route("/account/, methods=['POST','GET']") 
+def account():
+	if request.method == 'POST':
+		print request.form
+		name = request.form['name']
+		return	"Hello %s" % name
+	else:
+		page='''
+		<html><body>
+			<form action="" method="post" name="form>
+				<label for="name"> Name: </label>
+				<input type="text" name="text" id="name"/>
+				<input type="submit" name="submit" id="submit"/>			</form>
+			</body></html>'''
 
 
-@app.route("/static
+		return page 
+
+if __name__ == "__main__": 
+	app.run(host='0.0.0.0', debug=True)
 
 
 
 
-@app.route('/force404')
-def force404():
-	abort(404)
-
-@app.errorhandler(404)
-def page_not_found(error):
-	return	"Coudnt find the page SORRY!", 404
-
-
-if __name__ == "__main__":
-   app.run(host='0.0.0.0', debug=True)
 
 
