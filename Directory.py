@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-        return render_template ('index.html')
+        return render_template ('index.html', my_string="Wheee", my_list=[0,1,2,3,4,5])
 
 
 @app.route('/about')
