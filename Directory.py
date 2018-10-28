@@ -3,17 +3,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-        return render_template ('index.html', my_string="Wheee", my_list=[0,1,2,3,4,5])
-
+        return render_template ('index.html',title="Index" )
 
 @app.route('/about')
 def about():
-        return render_template('about.html')
+        return render_template('about.html', title="About")
 
 
 @app.route('/maindirectory')
 def maindirectory():
-        return render_template('maindirectory')
+        return render_template('maindirectory.html', title="Maindirectory")
 
         
 
