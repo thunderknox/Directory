@@ -1,9 +1,9 @@
 {% from "macro.html" import nav_link with context %}
 <!DOCTYPE hmtl>
-	<html>
-		<head> 
-			<title> About </title> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html>
+                <head>
+                        <title> Main Directory </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="http://netdna.bootstrapcdn.com/3.0.0/css/boostrap.min.css" rel="stylesheet" media="screen">
 <style type="text/css">
         .container{
@@ -16,20 +16,20 @@
         }
         </style>
 </head>
-<body> 
+<body>
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
+	  <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
+
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         {{ nav_link('root','Home') }}
         {{ nav_link('about','About') }}
@@ -40,16 +40,9 @@
         </nav>
 
 <div class="container">
-                                                        
+
        {% extends "layout2.html" %}
         {% block content %}
-
-
-
-
-
-
-
 
 
                 {% endblock %}
@@ -57,4 +50,8 @@
 </div>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://netdna.bootstrap.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+
+
 
