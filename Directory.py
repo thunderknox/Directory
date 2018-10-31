@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-        return render_template ('index.html',title="Index" )
+        return render_template ('index.html',title="Home" )
 
 @app.route('/about')
 def about():
@@ -15,6 +15,21 @@ def maindirectory():
         return render_template('maindirectory.html', title="Maindirectory")
 
         
+@app.route('/nustyle')
+def nustyle():
+	return render_template('nustyle.html')
+
+@app.route('/oldschool')
+def oldschool():
+	return render_template('oldschool.html')
+
+@app.route('/euphoric')
+def euphoric(): 
+	return render_template('euphoric.html')
+
+@app.route('/rawstyle')
+def rawstyle():
+	return render_template('rawstyle.html')
 
 
 
