@@ -1,3 +1,86 @@
-CONTACT US 
+{% from "macro.html" import nav_link with context %}
+
+<html>
+        <head>
+                <title> Hardstyle Directory - Leading you to youre genre of hardstyle </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style type="text/css">
+
+
+         .container{
+        max-width: 500px;
+        padding-top: 100px;
+        }
+        h1 {color: green;}
+        h3 {color: lightgreen;}
+
+        h1 { font-family: Helvetica bold;}
+        h1 { font-size: 100px}
+        p{color: green;}
+        p{font-size: 20px;}
+
+        .panel-body {
+        background-color: grey;
+        text-align: center;
+        }
+
+        body{
+
+        background-color: #000000 !important
+        }
+
+
+
+        </style>
+        </head>
+
+<body>
+ 
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+          <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        {{ nav_link('root','Home') }}
+        {{ nav_link('about','About') }}
+        {{ nav_link('maindirectory', 'Main Directory') }}
+        {{ nav_link('contactus', 'Contactus') }}
+         </ul>
+	</div>
+	</div>
+	</nav>
+
+<div class="container">
+<div class="panel panel-default">
+	<div class="panel-head"> Contact Us</div>
+	<div class="panel-body"><form action="mailto:thunderknox@gmail.com" method="post" enctype="text/plain"> 
+	<div class="form-group">
+	<label for="email">Email Address</label>
+	<input type="email" class="form-control" id="email" placeholder="Email Address"> 
+	</div>
+<div class="form-group">
+	<label for="message"> Message </label>
+	<input type="message" class="form-control" id="messagebox" placeholder="Messagebox"> 
+</div> 
+<button type="submit" class="btn btn-primary"> Submit </button> 
+</form>	
+</div>
+
+
+
+
+
+</body>
+</html> 
 
 
