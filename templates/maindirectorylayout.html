@@ -12,18 +12,21 @@
         max-width: 500px;
         padding-top: 100px;
         }
+	h2 {color: red;}
+	h2 {text-align:center;} 
         h1 {color: green;}
         h3 {color: lightgreen;}
 
         h1 { font-family: Helvetica bold;}
         h1 { font-size: 100px}
-
+	h2 { font-size: 30px;}
         p{color: green;}
         p{font-size: 20px;}
 	
 	.panel-body {
 	background-color: grey;
 	text-align: center;
+		
 	} 	
 
 	body{
@@ -31,27 +34,32 @@
 	background-color: #000000 !important	
 	} 
 	
-	
+	footer {
+	text-align: center;
+	}
 	
         </style>
         </head>
          
 <body>
 
-
+<h2> Main Directory</h2> 
+<br>
+<br>
+<br>
 <div class ="container2">
 
 <div class="panel panel-default">
 <div class="panel-body">
 <h2>Nu-Style</h2>
-<a class="btn btn-primary" href="{{url_for('nustyle')}}" role="button">NU-Style</a>
+<a class="btn btn-primary" href="{{url_for('nustyle')}}" role="button">Enter</a>
 </div>
 </div>
 
 <div class="panel panel-default">
 <div class="panel-body">
 <h2>OldSchool</h2>
-<a class="btn btn-primary" href="{{url_for('oldschool')}}" role="button">OldSchool</a>
+<a class="btn btn-primary" href="{{url_for('oldschool')}}" role="button">Enter</a>
 </div>
 </div>
 
@@ -60,7 +68,7 @@
 <div class="panel panel-default">
 <div class="panel-body">
 <h2>Euphoric</h2>
-<a class="btn btn-primary" href="{{url_for('euphoric')}}" role="button">Euphoric</a>
+<a class="btn btn-primary" href="{{url_for('euphoric')}}" role="button">Enter</a>
 </div>
 </div>
 <div class ="container2">
@@ -68,7 +76,7 @@
 <div class="panel panel-default">
 <div class="panel-body">
 <h2>Rawstyle</h2>
-<a class="btn btn-primary" href="{{url_for('rawstyle')}}" role="button">Rawstyle</a>
+<a class="btn btn-primary" href="{{url_for('rawstyle')}}" role="button">Enter</a>
 </div>
 </div>
 
@@ -80,4 +88,9 @@
 
 </body>
 
+<footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copyright Andrew McGuire 2018</span>
+      </div>
+    </footer>
 </html>
